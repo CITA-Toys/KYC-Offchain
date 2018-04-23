@@ -1,0 +1,16 @@
+extends ../layout/index
+block content
+  small.error#error= error
+
+  small.info#info= info
+
+  form#uploader(action="/files/new" method="POST" enctype="multipart/form-data")
+    div
+      input(type="text" name="name" placeholder="Name" value=name)
+    div
+      input(type="file" name="file" multiple="multiple" file=file)
+    div
+      input(type="submit")
+  script(src="/scripts/uploader.js")
+
+

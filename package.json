@@ -1,0 +1,35 @@
+{
+  "name": "cita-static-server",
+  "version": "1.0.0",
+  "git": "https://github.com/CITA-Toys/KYC-Offchain",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "nodemon --config ./nodemon.json",
+    "build": "tsc"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/koa": "^2.0.45",
+    "@types/koa-router": "^7.0.27",
+    "@types/node": "^9.6.6",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "nodemon": "^1.17.3",
+    "ts-node": "^6.0.0",
+    "typescript": "^2.8.3"
+  },
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "koa": "^2.5.0",
+    "koa-body": "^2.5.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^4.0.2",
+    "koa-views": "^6.1.4",
+    "pg": "^7.4.1",
+    "pug": "^2.0.3",
+    "sequelize": "^4.37.6"
+  }
+}
